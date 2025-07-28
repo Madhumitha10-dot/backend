@@ -7,7 +7,7 @@ require('dotenv').config()
 
 const port = process.env.PORT
 app.use(cors())
-app.use('/api/tasks', router)
+app.use('/', router)
 
 
 const start =async()=>{
